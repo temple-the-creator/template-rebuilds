@@ -13,17 +13,19 @@
 
 body{
   min-height: 100vh;
-  font-family: roboto, Arial, sans-serif; 
+  font-family: "roboto", Arial, sans-serif; 
 }
 
 /* general-styles */
 .header__title{
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: var(--spacing-lg) var(--spacing-lg) var(--spacing-sm);
 }
 
 .header__title2{
+   font-weight: 900;
+   font-size: 2rem;
    margin: var(--spacing-sm) var(--spacing-lg);
 }
 
@@ -54,8 +56,10 @@ body{
 }
 
 .img{
+  display: block;
   height: auto;
   width: 100%;
+  object-fit: cover;
 }
 .footer{
   color: white;
@@ -70,11 +74,15 @@ body{
   .split-layout{
     display: flex; 
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
   }
   
   .section-wrapper,.img__container{
     flex:1;
+  }
+
+  .header__title2{
+    font-size: 3rem;
   }
 
   .btn1{
