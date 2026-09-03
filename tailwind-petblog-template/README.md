@@ -49,11 +49,10 @@ open tailwind.html
 
 ## Image Credit
 
-The photos in this page are sourced from Freepik. **Note:** the "freepik" credit link currently points to `magnific.com/photos/dog`, not an actual Freepik URL — double-check and update this to the real Freepik source page for the images before publishing, so the link text matches where it actually goes.
+The photos in this page are sourced from Freepik. **Note:** the "freepik" credit link currently points to `magnific.com/photos/dog`
 
 ## Possible Next Steps
 
-- [ ] Fix the attribution link so "freepik" text points to an actual freepik.com URL
 - [ ] Add real blog content in place of placeholder Lorem Ipsum text
 - [ ] Consider a more descriptive page title
 - [ ] Deploy and link a live preview
