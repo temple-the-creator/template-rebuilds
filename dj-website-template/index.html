@@ -7,14 +7,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
+  <header>
     <img src="https://capp.nicepage.com/images/default-logo.png" class="logo">
-    <div class="hamburger">
+    <div class="sidebar-toggler">
       <span class="hamburger-icon"></span>
       <span class="hamburger-icon"></span>
       <span class="hamburger-icon"></span>
     </div>
-  </nav>
-  
+  </header>
+  <aside id="sidebar">
+      
+  </aside>
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    const sidebarToggle = document.querySelector('.sidebar-toggler');
+    sidebarToggle.addEventListener('click' , () => {
+      sidebar.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

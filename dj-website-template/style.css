@@ -3,7 +3,7 @@
   padding: 0;
 }
  
-nav{
+header{
   display: flex;
   justify-content: space-between;
   margin: 1rem 2rem;
@@ -12,7 +12,7 @@ nav{
 .logo{
   width: 4rem;
 }
-.hamburger {
+.sidebar-toggler{
   background-color: transparent;
   border: none;
   display: flex;
@@ -20,7 +20,6 @@ nav{
   gap:5px;
   width: 1.5rem;
   cursor: pointer;
-  
 }
 
 .hamburger-icon{
@@ -30,8 +29,26 @@ nav{
   background-color: #333; 
 }
 
-.hamburger:hover span{
+.sidebar-toggler:hover span{
   background-color: orangered;
 }
+
+aside{
+  background-color: black;
+  height: 100vh;
+  width: 15rem;
+  position: fixed;
+  top: 0;
+  left:0;
+  padding-top: 0.5rem;
+  transform: translateX(-15rem);
+  transition: transform 0.3s ease;
+}
+
+.active{
+  transform: translateX(0);
+}
+
+
 
 
