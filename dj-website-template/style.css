@@ -2,6 +2,10 @@
   margin:0;
   padding: 0;
 }
+
+body{
+  font-family: "Roboto", Arial, sans-serif;
+}
  
 header{
   display: flex;
@@ -43,12 +47,48 @@ aside{
   padding-top: 0.5rem;
   transform: translateX(-15rem);
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .active{
   transform: translateX(0);
 }
 
+.close-btn{
+  border: none;
+  cursor: pointer;
+  background-color:none;
+  position: relative;
+  display: block;
+}
 
+.close-btn::before,
+.close-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;         
+  height: 2px;        
+  background-color: #fff;
+  border-radius: 1px;  
+}
+
+.close-btn::before {
+  transform: translate(13rem, 1rem) rotate(45deg);
+}
+
+
+.close-btn::after {
+  transform: translate(13rem, 1rem) rotate(-45deg);
+}
+
+aside a{
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: 3rem;
+  left: 6rem;
+}
 
 

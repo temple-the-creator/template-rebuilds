@@ -5,24 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <img src="https://capp.nicepage.com/images/default-logo.png" class="logo">
-    <div class="sidebar-toggler">
+    <button class="sidebar-toggler">
       <span class="hamburger-icon"></span>
       <span class="hamburger-icon"></span>
       <span class="hamburger-icon"></span>
-    </div>
+    </button>
   </header>
   <aside id="sidebar">
-      
+    <button class="close-btn"></button>\
+    <a href="">home</a>
   </aside>
+  
   <script>
     const sidebar = document.getElementById('sidebar');
     const sidebarToggle = document.querySelector('.sidebar-toggler');
     sidebarToggle.addEventListener('click' , () => {
       sidebar.classList.toggle('active');
+    });
+
+    const hide = document.querySelector('.close-btn');
+    
+    hide.addEventListener('click', () => {
+      sidebar.classList.remove('active')
     });
   </script>
 </body>
