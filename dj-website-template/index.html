@@ -7,30 +7,64 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="https://capp.nicepage.com/images/default-logo.png" class="logo">
-    <button class="sidebar-toggler">
-      <span class="hamburger-icon"></span>
-      <span class="hamburger-icon"></span>
-      <span class="hamburger-icon"></span>
+  <header class="header">
+    <img src="https://capp.nicepage.com/images/default-logo.png" class="header__logo" alt="brand logo">
+    <button class="header__sidebar-toggler">
+      <span class="header__hamburger-icon"></span>
+      <span class="header__hamburger-icon"></span>
+      <span class="header__hamburger-icon"></span>
     </button>
   </header>
-  <aside id="sidebar">
-    <button class="close-btn"></button>\
-    <a href="">home</a>
+
+  <aside id="sidebar" class="sidebar">
+
+    <button class="sidebar__close-btn"></button>
+    <a href="#">home</a>
+
   </aside>
+
+  <section class="hero">
+
+    <div>
+      <img src="hero.png" alt="man listening to music" class="hero__img">
+    </div>
+
+    <div class="hero__content">
+
+      <h1 class="hero__title">Dj Night</h1>
+      <p class="hero__description">i have everything to make your life bright</p>
+
+      <div class="hero__contact">
+        <h2 class="hero__contact-name">Manager Don Johnson</h2>
+        <a class="hero__contact-mail">hellodon@gmail.com</a>
+        <a class="hero__contact-number">+1 123 456 7890</a>
+      </div>
+
+      <div class="hero__contact">
+        <h2 class="hero__contact-name">Director Rita smith</h2>
+        <a class="hero__contact-mail">hellorita@gmail.com</a>
+        <a  class="hero__contact-number">+1 123 456 7890</a>
+      </div>
+
+      <p class="hero__img-credit">IMAGE FROM <a href="#" class="hero__img-credit-link">FREEPIK</a></p>
+
+      <div class="hero__orange-ball"></div>
+     
+
+    </div>
+  </section>
   
   <script>
     const sidebar = document.getElementById('sidebar');
-    const sidebarToggle = document.querySelector('.sidebar-toggler');
+    const sidebarToggle = document.querySelector('.header__sidebar-toggler');
     sidebarToggle.addEventListener('click' , () => {
       sidebar.classList.toggle('active');
     });
 
-    const hide = document.querySelector('.close-btn');
+    const hide = document.querySelector('.sidebar__close-btn');
     
     hide.addEventListener('click', () => {
       sidebar.classList.remove('active')

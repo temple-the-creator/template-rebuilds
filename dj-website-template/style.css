@@ -1,22 +1,24 @@
 *{
   margin:0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body{
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "oswald", sans-serif;
 }
  
-header{
+.header{
   display: flex;
   justify-content: space-between;
   margin: 1rem 2rem;
 }
 
-.logo{
-  width: 4rem;
+.header__logo{
+  width: 3rem;
 }
-.sidebar-toggler{
+
+.header__sidebar-toggler{
   background-color: transparent;
   border: none;
   display: flex;
@@ -26,18 +28,18 @@ header{
   cursor: pointer;
 }
 
-.hamburger-icon{
+.header__hamburger-icon{
   display: block;
   height: 3px;
   width: 100%;
   background-color: #333; 
 }
 
-.sidebar-toggler:hover span{
+.header__sidebar-toggler:hover span{
   background-color: orangered;
 }
 
-aside{
+.sidebar{
   background-color: black;
   height: 100vh;
   width: 15rem;
@@ -54,7 +56,7 @@ aside{
   transform: translateX(0);
 }
 
-.close-btn{
+.sidebar__close-btn{
   border: none;
   cursor: pointer;
   background-color:none;
@@ -62,8 +64,8 @@ aside{
   display: block;
 }
 
-.close-btn::before,
-.close-btn::after {
+.sidebar__close-btn::before,
+.sidebar__close-btn::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -74,16 +76,16 @@ aside{
   border-radius: 1px;  
 }
 
-.close-btn::before {
+.sidebar__close-btn::before {
   transform: translate(13rem, 1rem) rotate(45deg);
 }
 
 
-.close-btn::after {
+.sidebar__close-btn::after {
   transform: translate(13rem, 1rem) rotate(-45deg);
 }
 
-aside a{
+.sidebar a{
   color: #fff;
   text-decoration: none;
   position: absolute;
@@ -91,4 +93,58 @@ aside a{
   left: 6rem;
 }
 
+.hero{
+  margin: 0 2rem;
+}
 
+
+.hero__img{
+  width:100%;
+  height: auto;
+}
+
+.hero__content{
+  margin: 1rem;
+}
+
+.hero__title{
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.hero__description{
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero__contact-name{
+  font-weight: 400;
+}
+
+.hero__contact-mail,.hero__contact-number{
+  color: #f14a48;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.hero__img-credit{
+  letter-spacing: 4px;
+  margin: 2rem 0;
+}
+
+.hero__img-credit a{
+  color: #333;
+  text-decoration: none;
+}
+
+.hero__img-credit a:hover{
+  text-decoration: underline;
+}
+
+.hero__orange-ball{
+  background-color: #f14a48;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
