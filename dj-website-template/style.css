@@ -128,23 +128,72 @@ body{
   margin: 0.5rem 0;
 }
 
-.hero__img-credit{
+.hero__img-credit,.event__img-credit{
   letter-spacing: 4px;
-  margin: 2rem 0;
+  padding: 1.5rem 0;
+  font-weight: 300;
 }
 
-.hero__img-credit a{
-  color: #333;
+.hero__img-credit-link,.event__img-credit-link:hover{
+  color: black;
   text-decoration: none;
 }
 
-.hero__img-credit a:hover{
+.hero__img-credit-link:hover,.hero__img-credit-link:hover{
   text-decoration: underline;
 }
 
 .hero__orange-ball{
   background-color: #f14a48;
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
+  margin: 2rem 0;
+}
+
+.latest-events{
+  background-color: #282A35;
+  color: #fff;
+  padding: 0 2rem;
+}
+
+.latest-events__title{
+  font-size: 4rem;
+  font-weight: 200;
+  padding: 3rem 0;
+}
+
+.event{
+  margin-bottom: 1rem;
+}
+
+.event__img{
+  height: 13rem;
+}
+
+.event__title{
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.event__date{
+  font-size: 1.6rem;
+}
+
+.event__button{
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin: 0.5rem 0;
+  border: 1px solid #fff;
+  font-weight: 700;
+}
+
+.event__button:hover{
+  background-color: #fff;
+  color: #282A35;
+}
+
+.event__img-credit-link{
+  color: black;
 }
