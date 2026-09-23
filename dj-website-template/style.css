@@ -4,14 +4,26 @@
   box-sizing: border-box;
 }
 
+img{
+  max-width: 100%;
+}
+
+html{
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body{
   font-family: "oswald", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
 }
+
  
 .header{
   display: flex;
   justify-content: space-between;
-  margin: 1rem 2rem;
+  margin: 2rem;
 }
 
 .header__logo{
@@ -94,7 +106,7 @@ body{
 }
 
 .hero{
-  margin: 0 2rem;
+  margin:  2rem;
 }
 
 
@@ -122,25 +134,29 @@ body{
   font-weight: 400;
 }
 
-.hero__contact-mail,.hero__contact-number{
+.hero__contact-mail,
+.hero__contact-number{
   color: #f14a48;
   display: block;
   margin: 0.5rem 0;
 }
 
-.hero__img-credit,.event__img-credit{
+.hero__img-credit{
   letter-spacing: 4px;
   padding: 1.5rem 0;
   font-weight: 300;
 }
 
-.hero__img-credit-link,.event__img-credit-link:hover{
+.hero__img-credit-link,
+.event__img-credit-link,
+.biography__img-credit-link{
   color: black;
-  text-decoration: none;
 }
 
-.hero__img-credit-link:hover,.hero__img-credit-link:hover{
-  text-decoration: underline;
+.hero__img-credit-link:hover,
+.event__img-credit-link:hover,
+.biography__img-credit-link:hover{
+   text-decoration: none;
 }
 
 .hero__orange-ball{
@@ -155,6 +171,7 @@ body{
   background-color: #282A35;
   color: #fff;
   padding: 0 2rem;
+  margin-bottom: 2rem;
 }
 
 .latest-events__title{
@@ -164,11 +181,12 @@ body{
 }
 
 .event{
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .event__img{
   height: 13rem;
+  max-width: 100%;
 }
 
 .event__title{
@@ -194,6 +212,92 @@ body{
   color: #282A35;
 }
 
+.event__img-credit,
+.biography__img-credit{
+  font-size: 1.2rem;
+
+  padding-bottom: 2rem;
+  font-family: sans-serif;
+}
+
 .event__img-credit-link{
   color: black;
 }
+
+.biography{
+  margin: 0 2rem;
+  position: relative;
+}
+
+.biography__stripe-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: repeating-linear-gradient(
+    135deg,
+    #000000 0px, #000000 3px,
+    #ffffff 3px, #ffffff 10px
+  );
+}
+
+.biography__img{
+  width: 80%;
+  height: auto;
+  position: relative;
+  bottom: 2.3rem;
+  left: 2rem;
+  z-index: 1;
+}
+
+.biography__orange-ball{
+  background-color: #f14a48;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  bottom:9rem;
+}
+
+.biography__content{
+  background-color: #f2f2f2;
+  padding: 1rem;
+  position: relative;
+  width: 85%;
+  bottom: 11rem;
+}
+
+.biography__content-title{
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.biography__content-text{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-family:  sans-serif;
+}
+
+.biography__content-btn{
+  font-size: 1rem;
+  letter-spacing: 2px;
+  padding: 1rem 1.5rem;
+  border: 2px solid;
+}
+
+.biography__content-btn:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+.biography-black-circle{
+  height: 4rem;
+  width: 4rem;
+  background-color: #fff;
+  border: 12px solid #000;
+  border-radius: 50%;
+  position: relative;
+  left: 10rem;
+  bottom: 10rem;
+}
+
