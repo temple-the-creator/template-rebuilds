@@ -1,5 +1,5 @@
 window.addEventListener('scroll', () => {
-  const element = document.querySelector('.box');
+  const element = document.querySelector('.img-container');
   const position = element.getBoundingClientRect().top;
 
   if (position < window.innerHeight) {
