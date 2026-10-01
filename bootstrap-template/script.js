@@ -1,8 +1,12 @@
 window.addEventListener('scroll', () => {
   const element = document.querySelector('.img-container');
-  const position = element.getBoundingClientRect().top;
+  const position = element.getBoundingClientRect();
 
-  if (position < window.innerHeight) {
-    element.classList.add('show');
+  const isVisible = position.top < window.innerHeight && position.bottom > 0;
+
+  if (isVisible) {
+    element.classList.add('show-img');
+  } else {
+    element.classList.remove('show-img');
   }
 });

@@ -1,33 +1,4 @@
-
-.image-credit{
-  color: blueviolet;
-  text-decoration: none;
-}
-
-.custom-btn1{
-    color: white;
-    background-color:#ffc107;
-    padding: 10px 30px;
-    box-sizing: border-box;
-    border: none;
-}
-.custom-btn2{
-    color:#ffc107;
-    border: 2px solid #ffc107;
-    background-color:transparent;
-    padding: 10px 30px;
-    box-sizing: border-box;
-}
-
-.custom-btn1:hover{
-  background-color: #ffc107d6;
-}
-.custom-btn2:hover{
-  color: blueviolet;
-  border-color: blueviolet;
-}
-
-@keyframes slideInHeading {
+@keyframes slideInLeft {
   from {
     opacity: 0;
     transform: translateX(-60px);
@@ -39,18 +10,42 @@
 }
 
 .hero-heading {
-  animation: slideInHeading 1s ease-out;
+  animation: slideInLeft 1s linear;
 }
 
-@keyframes appear {
-  from{ 
-    opacity: 0;
-    transform: scale(0.2);
-  }
-  to{
-    opacity: 1;
-    transform: scale(1);
-  }
+.image-credit{
+  color: blueviolet;
+  text-decoration: none;
 }
 
-.img-container.show{ animation: appear 3s ease-in-out ;}
+.custom-btn1{
+  color: white;
+  background-color:#ffc107;
+  padding: 10px 30px;
+  border: none;
+}
+.custom-btn2{
+  color:#ffc107;
+  border: 2px solid #ffc107;
+  background-color:transparent;
+  padding: 10px 30px;
+}
+
+.custom-btn1:hover{
+  background-color: #ffc107d6;
+}
+.custom-btn2:hover{
+  color: blueviolet;
+  border-color: blueviolet;
+}
+
+.img-container {
+  opacity: 0;
+  transform: scale(0.2);
+  transition: opacity 1s linear, transform 1s linear;
+}
+
+.show-img{
+  opacity: 1;
+  transform: scale(1);
+}
